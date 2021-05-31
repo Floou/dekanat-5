@@ -2,8 +2,8 @@ from django.db import models
 
 
 class Group(models.Model):
-    name = models.CharField(verbose_name='название группы', max_length=256)
-    desc = models.TextField(verbose_name='Специальность')
+    name = models.CharField(verbose_name='Название группы', max_length=256)
+    desc = models.TextField(verbose_name='специальность')
 
     def __str__(self):
         return self.name
