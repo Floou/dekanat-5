@@ -20,7 +20,7 @@ def group_list(request):
         'title': 'группы',
         'group': group,
     }
-    return render(request, 'mainapp/', context)
+    return render(request, 'mainapp/group_all', context)
 
 def create_group(request):
     if request.method == 'POST':
