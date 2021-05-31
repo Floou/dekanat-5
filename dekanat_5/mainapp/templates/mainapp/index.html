@@ -5,6 +5,10 @@
     <title>{{ title|capfirst }}</title>
 </head>
 <body>
-    <a href="{% url 'mainapp:index' %}">Главная</a>
+        <a href="{% url 'mainapp:index' %}">Главная</a>
+    {% if user.is_staff %}
+            <a href="{% url 'mainapp:' %}">Группы</a></li>
+            <a href="#">Создать группу</a>
+    {% endif %}
 </body>
 </html>
